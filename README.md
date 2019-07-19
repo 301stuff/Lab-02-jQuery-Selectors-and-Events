@@ -85,6 +85,8 @@ Given that a user is presented with sort options
 When the user clicks on one option
 Then the images should be sorted accordingly
 
+
+
 How are we implementing it?
 Add the ability for the user to sort the images by either title or by number of horns.
 Sort the images by one of the properties on page load. This should also apply to the second page of images.
