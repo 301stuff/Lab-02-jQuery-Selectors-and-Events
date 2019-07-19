@@ -38,6 +38,9 @@ Finish time: _____
 
 Actual time needed to complete: _____
 
+Referenced Stackoverflow to remove duplicates frome selector list https://stackoverflow.com/questions/1960473/get-all-unique-values-in-a-javascript-array-remove-duplicates
+
+
 Feature #1: Display images
 Why are we implementing this feature?
 As a user, I want to view the images on the page so that I can browse the photo collection.

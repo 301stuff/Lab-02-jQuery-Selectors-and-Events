@@ -19,7 +19,7 @@ Creature.prototype.render = function() {
     creatureClone.find('p').text(this.description);
     creatureClone.removeClass('clone');
     creatureClone.attr('class', this.horns);
-}
+};
 
 Creature.readJson = () => {
     $.get('../data/page-1.json', 'json')
@@ -36,3 +36,14 @@ Creature.loadCreatures = () => {
 };
 
 $(() => Creature.readJson());
+
+Creature.SelectOptions = [];
+
+Creature.makeOption = function(){
+    let SelectOptionsClone = this.SelectOptions;
+Creature.allCreatures.forEach(function(critter){
+    if ($.inArray(critter.keyword, SelectOptionsClone) === -1) {
+        SelectOptionsClone.push(critter.keyword);
+    }
+}
+)}
