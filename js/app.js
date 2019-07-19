@@ -21,7 +21,7 @@ Creature.prototype.render = function() {
     .attr("alt", this.description);
   creatureClone.find("p").text(this.description);
   creatureClone.removeClass("clone");
-  creatureClone.attr("class", this.horns);
+  creatureClone.attr("class", this.keyword).addClass('animal');
 };
 
 Creature.readJson = () => {
@@ -50,10 +50,20 @@ Creature.makeOption = function() {
       SelectOptionsClone.push(critter.keyword);
     }
   });
+  // Below is updating the list on site
   for (var i = 0; i < SelectOptionsClone.length; i++) {
     $("select").append(
-      "<option value=" + i + ">" + SelectOptionsClone[i] + "</option>"
+      "<option value=" + SelectOptionsClone[i] + ">" + SelectOptionsClone[i] + "</option>"
     );
   }
 };
-// Below is updating the list on site
+
+
+// event listener for drop down menu
+$('select[name="choice"]').on('change', function() { 
+  let $selection = $(this).val();
+   $('.animal').hide();
+   $('.' + $selection).show();  
+
+  })
+
