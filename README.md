@@ -34,9 +34,9 @@ Estimate of time needed to complete: 2 hours
 
 Start time: 12:15pm
 
-Finish time: _____
+Finish time: 9:07 pm 
 
-Actual time needed to complete: _____
+Actual time needed to complete: (intermitten) 6 hours
 
 Referenced Stackoverflow to remove duplicates frome selector list https://stackoverflow.com/questions/1960473/get-all-unique-values-in-a-javascript-array-remove-duplicates
 
